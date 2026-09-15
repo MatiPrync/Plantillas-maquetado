@@ -18,7 +18,22 @@
     <div class="Cuadradito3"></div>
     <div class="Cuadradito4"></div>
    </section>
-   <section class="Rectangulo3"></section>
+   <section class="Rectangulo3">
+    <div class="CuadradoN"></div>
+    <div class="RectangulitoN"></div>
+    <div class="Rectangulito1"></div>
+    <div  class="Rectangulito2"></div>
+    <div class="Rectangulito3"></div>
+    <div class="Rectangulito4"></div>
+   </section>
+   <section class="CuadradoB">
+    <div class="Cuadrado1"></div>
+    <div class="Cuadrado2"></div>
+    <div class="Cuadrado3"></div>
+    <div class="Cuadrado4"></div>
+    <div class="Cuadrado5"></div>
+    <div class="Cuadrado6"></div>
+   </section>
 </body>
 
 
@@ -46,7 +61,7 @@ body {
 
 
     background-color: #91d3d9;
-    width: 1360px;
+    width: 100%;
     height: 50px;
     position: relative;
 }
@@ -95,7 +110,7 @@ body {
 
 
     background-color: #E5E5E5;
-    width: 1360px;
+    width: 100%;
     height: 50px;
     gap: 2rem;
 }
@@ -156,14 +171,101 @@ body {
 }
 
 .Rectangulo3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 
     background-color: #FFD680;
-    width: 1360px;
+    width: 100%;
     height: 200px;
+
 }
+
+.CuadradoN {
+    background-color: #ffcd60;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 100px;
+    top: 25px;
+}
+
+.RectangulitoN {
+    background-color: orangered;
+    width: 200px;
+    height: 20px;
+
+    position: absolute;
+    left: 50%;
+    top: 20%;
+}
+
+.Rectangulito1 {
+    background-color: white;
+    width: 400px;
+    height: 10px;
+
+    position: absolute;
+    left: 50%;
+    top: 40%;
+}
+
+.Rectangulito2 {
+    background-color: white;
+    width: 400px;
+    height: 10px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.Rectangulito3 {
+    background-color: white;
+    width: 400px;
+    height: 10px;
+
+    position: absolute;
+    left: 50%;
+    top: 60%;
+}
+
+.Rectangulito4 {
+    background-color: white;
+    width: 200px;
+    height: 10px;
+
+    position: absolute;
+    left: 50%;
+    top: 70%;
+}
+
+.CuadradoB {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    gap: 50px;
+    padding: 50px;
+    
+    background-color: blue;
+    width: 100%;
+    height: 800px;
+}
+
+.Cuadrado1 {
+    background-color: aquamarine;
+    width: 300px;
+    height: 300px;
+
+}
+
+.Cuadrado2 {
+    background-color: #FFD680;
+    width: 300px;
+    height: 300px;
+
+}
+
+
+
+
 
 </style>
 </html>

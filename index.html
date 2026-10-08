@@ -27,12 +27,45 @@
     <div class="Rectangulito4"></div>
    </section>
    <section class="CuadradoB">
-    <div class="Cuadrado1"></div>
-    <div class="Cuadrado2"></div>
-    <div class="Cuadrado3"></div>
-    <div class="Cuadrado4"></div>
-    <div class="Cuadrado5"></div>
-    <div class="Cuadrado6"></div>
+    <div class="Cuadrado1">
+        <div class="MiniCuadrado1"></div>
+        <div class="MiniRectangulo1"></div>
+    </div>
+    <div class="Cuadrado2">
+        <div class="MiniCuadrado2"></div>
+        <div class="MiniRectangulo2"></div>
+    </div>
+    <div class="Cuadrado3">
+        <div class="MiniCuadrado3"></div>
+        <div class="MiniRectangulo3"></div>
+    </div>
+    <div class="Cuadrado4">
+        <div class="MiniCuadrado4"></div>
+        <div class="MiniRectangulo4"></div>
+    </div>
+    <div class="Cuadrado5">
+        <div class="MiniCuadrado5"></div>
+        <div class="MiniRectangulo5"></div>
+    </div>
+    <div class="Cuadrado6">
+        <div class="MiniCuadrado6"></div>
+        <div class="MiniRectangulo6"></div>
+    </div>
+   </section>
+
+   <section class="RectanguloAbajo">
+    <div class="RectanguloGris1"></div>
+    <div class="RectanguloGris2"></div>
+    <div class="RectanguloGris3"></div>
+    <div class="Parrafo1"></div>
+    <div class="Parrafo2"></div>
+    <div class="Parrafo3"></div>
+    <div class="Parrafo4"></div>
+    <div class="Parrafo5"></div>
+    <div class="Parrafo6"></div>
+    <div class="Parrafo7"></div>
+    <div class="Parrafo8"></div>
+    <div class="Parrafo9"></div>
    </section>
 </body>
 
@@ -249,22 +282,123 @@ body {
     height: 800px;
 }
 
-.Cuadrado1 {
+.Cuadrado1 , .Cuadrado4 {
     background-color: aquamarine;
     width: 300px;
     height: 300px;
 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.Cuadrado2 {
+.Cuadrado2 , .Cuadrado6 {
     background-color: #FFD680;
     width: 300px;
     height: 300px;
 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
+.Cuadrado3 , .Cuadrado5 {
+    background-color: #ff3333;
+    width: 300px;
+    height: 300px;
 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+
+.MiniCuadrado1 , .MiniCuadrado4 { 
+    background-color: rgb(0, 255, 170);
+    width: 150px;
+    height: 150px;
+}
+
+.MiniCuadrado2 , .MiniCuadrado6 { 
+    background-color: #ffae00;
+    width: 150px;
+    height: 150px;
+}
+
+.MiniCuadrado3 , .MiniCuadrado5 { 
+    background-color: #ff0000;
+    width: 150px;
+    height: 150px;
+    
+}
+
+.MiniRectangulo1 , .MiniRectangulo4 {
+    background-color: rgb(0, 255, 170);
+    width: 100%;
+    height: 50px;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.MiniRectangulo2 , .MiniRectangulo6 {
+    background-color: #ffae00;
+    width: 100%;
+    height: 50px;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.MiniRectangulo3 , .MiniRectangulo5 {
+    background-color: #ff0000;
+    width: 100%;
+    height: 50px;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.RectanguloAbajo {
+    background-color: gray;
+    width: 100%;
+    height: 300px;
+
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.RectanguloGris1 , .RectanguloGris2 , .RectanguloGris3 {
+    width: 200px;
+    height: 50px;
+    background-color: rgb(88, 88, 88);
+}
+
+.Parrafo1 , .Parrafo2 , .Parrafo3 , .Parrafo4 , .Parrafo5 , .Parrafo6 {
+    background-color: white;
+    height: 20px;
+    width: 200px;
+}
+
+.Parrafo7 , .Parrafo8 , .Parrafo9 {
+
+    background-color: white;
+    width: 150px;
+    height: 20px;
+}
 
 
 </style>
